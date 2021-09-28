@@ -1,0 +1,332 @@
+
+.color-list_area{
+	padding: 10px;
+}
+
+.color-list_area .color-list_heading > h4{
+	font-size: 15px;
+}
+
+.modal-wrapper .modal-dialog .modal-content{
+	height: 580px;
+}
+
+.range-picker div{
+	width: 100%;
+	min-width: 30px;
+}
+
+.cartdetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cart-color {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+#modal-loader{
+    position:fixed;
+    display:none;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    z-index:99999999;
+    background-color: rgba(0,0,0,0.7);
+}
+
+@keyframes ldio-xdcxfnbfmjm {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.ldio-shhdvnglxrk div {
+    position: absolute;
+    animation: ldio-xdcxfnbfmjm 1s linear infinite;
+    width: 76px;
+    height: 76px;
+    top: 62px;
+    left: 62px;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 0 #85a2b6;
+    transform-origin: 38px 38.5px;
+}
+
+.loadingio-spinner-eclipse-5n5ocxxlhe2 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.ldio-shhdvnglxrk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+
+.table-content table td.quantity .cart-inc-dec {
+  margin: 0 auto;
+}
+
+.cart-inc-dec {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.quantity .cart-inc-dec > .update-item-quantity{
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.quantity .cart-inc-dec {
+  position: relative;
+  width: 76px;
+  text-align: left;
+}
+
+.quantity .cart-inc-dec > .cart-inc-dec-box {
+  border: 1px solid #e5e5e5;
+  height: 46px;
+  text-align: center;
+  width: 48px;
+  background: #ffffff;
+}
+
+.quantity .cart-inc-dec > .update-item-quantity {
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  height: 23px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  width: 28px;
+  line-height: 21px;
+}
+
+.quantity .cart-inc-dec > .update-item-quantity:hover {
+  background: #f5f5f5;
+}
+
+.quantity .cart-inc-dec > .update-item-quantity.dec {
+  bottom: 0;
+  right: 0;
+}
+
+.quantity .cart-inc-dec > .update-item-quantity.inc {
+  border-bottom: none;
+  top: 0;
+  right: 0;
+}
+
+.customer-details{
+    color: #aa490f;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rtable {
+    /*!
+    // IE needs inline-block to position scrolling shadows otherwise use:
+    // display: block;
+    // max-width: min-content;
+    */
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    
+    overflow-x: auto;
+    
+    /* // optional - looks better for small cell values */
+    white-space: nowrap;
+  
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .rtable,
+  .rtable--flip tbody {
+    /* // optional - enable iOS momentum scrolling */
+    -webkit-overflow-scrolling: touch;
+    
+    /* // scrolling shadows */
+    background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+                radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+    background-size: 10px 100%, 10px 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+    
+  }
+  
+  /* // change these gradients from white to your background colour if it differs */
+  /* // gradient on the first cells to hide the left shadow */
+  /* // .rtable td:first-child, */
+  /* // .rtable--flip tbody tr:first-child { */
+  /* //   background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%); */
+  /* //   background-repeat: no-repeat; */
+  /* //   background-size: 20px 100%; */
+  /* // } */
+  
+  /* // gradient on the last cells to hide the right shadow */
+  /* // .rtable td:last-child, */
+  /* // .rtable--flip tbody tr:last-child { */
+  /* //   background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%); */
+  /* //   background-repeat: no-repeat; */
+  /* //   background-position: 100% 0; */
+  /* //   background-size: 20px 100%; */
+  /* // } */
+  
+  .rtable th {
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    background: #f2f0e6;
+  }
+  
+  .rtable th,
+  .rtable td {
+    padding: 6px 12px;
+    border: 1px solid #d9d7ce;
+  }
+  
+  .rtable--flip {
+    display: flex;
+    overflow: hidden;
+    background: none;
+  }
+  
+  .rtable--flip thead {
+    display: flex;
+    flex-shrink: 0;
+    min-width: min-content;
+  }
+  
+  .rtable--flip tbody {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .rtable--flip tr {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    flex-shrink: 0;
+  }
+  
+  .rtable--flip td,
+  .rtable--flip th {
+    display: block;
+  }
+  
+  .rtable--flip td {
+    background-image: none !important;
+    /* // border-collapse is no longer active */
+    border-left: 0;
+  }
+  
+  /* // border-collapse is no longer active */
+  .rtable--flip th:not(:last-child),
+  .rtable--flip td:not(:last-child) {
+    border-bottom: 0;
+  }
+  
+  .header_area.sticky.colored{
+    background-color: #fff;
+  }
+  #sizeChart{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    transform: translateX(100%);
+    /* display: none; */
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
+  }
+  #sizeChart.show{
+    /* display: flex; */
+    transform:translateX(0)
+  }
+  #sizeChart #closeChart{
+    position: absolute;
+    top:20px;
+    right:20px;
+  
+  }
+  .sp-sticky_gallery .row .col-lg-6{
+    padding-left:8px;
+    padding-right: 8px;
+  }
+  @media only screen and (max-width:992px){
+    .nav-search{
+      display:none;
+    }
+    .nav-toggle{
+      right:0;
+    }
+    .navigation-portrait .nav-cart {
+      margin-right: 50px;
+    }
+    .sp-area{
+      padding:32px 0;
+    }
+    .sp-sticky_gallery .row{
+      flex-wrap:nowrap;
+      overflow-x:scroll;
+    }
+    .sp-sticky_gallery .row .col-lg-6{
+      padding:0 6px;
+      width:100%;
+      flex:none;
+    }
+  }
+  @media only screen and (max-width:525px){
+    .sp-area .sp-nav .sp-content{
+      padding-top:16px;
+    }
+    .options-wrapper{
+      flex-direction: column;
+    }
+    .color-list_area .flex-row{
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+    .product-tab_area-2 .sp-product-tab_nav{
+      padding-top:24px;
+    }
+    .product-tab_area .section-title {
+      display: flex;
+    }
+    .product-item .single-product .product-img{
+      padding:0;
+    }
+  }

@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "50f10d7e-4024-41f6-8e95-91f0e2932c0c",
+		"name": "Muhartha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test.user@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"fb_token\": \"fbtotken\",\r\n    \"ios_token\":\"iostoken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						},
+						"description": "Login with Email & Password"
+					},
+					"response": []
+				},
+				{
+					"name": "Register Api(Normal)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Test User\",\r\n    \"email\": \"test.user@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"password_confirmation\" : \"test123\",\r\n    \"fb_token\": \"fbtotken\",\r\n    \"ios_token\":\"iostoken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Register with Email and Password"
+					},
+					"response": []
+				},
+				{
+					"name": "Login/Register with Google",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"John Doe\",\r\n    \"email\" : \"johndoe@gmail.com\",\r\n    \"google_token\":\"sample_google_token1\",\r\n    \"fb_token\": \"fbtotken\",\r\n    \"ios_token\":\"iostoken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Login with Google Account"
+					},
+					"response": []
+				},
+				{
+					"name": "Login/Register with Facebook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"John Doe\",\r\n    \"email\" : \"johndoe@test.com\",\r\n    \"facebook_token\": \"sample_facebook_token1\",\r\n    \"fb_token\": \"fbtotken\",\r\n    \"ios_token\":\"iostoken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Login/Register with Facebook Account"
+					},
+					"response": []
+				},
+				{
+					"name": "Login/Register with Apple ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apple_token\": \"sample_apple_token1\",\r\n    \"role\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Login for iOS Users"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{customer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"659327\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/verify-account",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"verify-account"
+							]
+						},
+						"description": "Verify Account with OTP sent to provide Email"
+					},
+					"response": []
+				},
+				{
+					"name": "Resend Verification Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{customer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/resend-verification-mail",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"resend-verification-mail"
+							]
+						},
+						"description": "Resend Verification Token to provided Email"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basic Info",
+			"item": [
+				{
+					"name": "Site Setting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/settings",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"settings"
+							]
+						},
+						"description": "Basic Information about Website like Contact Details, Logo and others."
+					},
+					"response": []
+				},
+				{
+					"name": "Banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/banners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"banners"
+							]
+						},
+						"description": "Banners for Slider on Home Page"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Details",
+			"item": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{api_token}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Categories & Products",
+			"item": [
+				{
+					"name": "All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						},
+						"description": "Product Categories List"
+					},
+					"response": []
+				},
+				{
+					"name": "All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products?page=1&per_page=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "20"
+								}
+							]
+						},
+						"description": "All Products with color, size variations and other Details"
+					},
+					"response": []
+				},
+				{
+					"name": "Products Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/product/men-knitted-shorts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product",
+								"men-knitted-shorts"
+							]
+						},
+						"description": "View Single Product Details with Slug"
+					},
+					"response": []
+				},
+				{
+					"name": "Featured Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/featured-products?page=1&per_page=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"featured-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "20"
+								}
+							]
+						},
+						"description": "Featured Products Only"
+					},
+					"response": []
+				},
+				{
+					"name": "Category Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/category-products/jackets",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category-products",
+								"jackets"
+							]
+						},
+						"description": "View Specific Category Products with slug"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
